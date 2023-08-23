@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+:root {
+    --title-padding : 2rem;
+    --highlight-color : rgb(25, 25, 30);
+}
+
+body {
+    background-color: rgb(16, 16, 18);
+    color: white;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.project {
+    flex-direction: column;
+    width: 100%;
+    margin: var(--title-padding) auto 0;
+    border: solid 5px var(--highlight-color);
+    border-radius: 10px;
+}
+
+.page-wrap {
+    max-width: 1600px;
+    margin: auto;
+    flex-direction: column;
+    justify-content: initial;
+}
+
+.title {
+    width: 100%;
+    padding: var(--title-padding);
+    text-align: center;
+    background-color: var(--highlight-color);
+}
+
+.subtitle {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* ===================================================== 1 ================================================ */
+
+.amogus {
+    --height: 16rem;
+    --width: 14rem;
+    --visor-width: calc(var(--width) / 1.2);
+    --leg-start: 2rem;
+    --leg-height: calc(var(--height) / 2.5);
+    --character-color: red;
+    --shadow-color: rgb(164, 1, 39);
+
+    padding-top: 2rem;
+}
+
+.torso {
+    height: var(--height);
+    width: var(--width);
+    border-radius: 35% 55% 0% 0% / 45% 50% 0% 0%;
+    margin-top: 2rem;
+    background-color: var(--shadow-color);
+}
+
+.torso::before {
+    content: ' ';
+    position: absolute;
+    background-color: var(--character-color);
+    height: calc(var(--height) + 2rem);
+    width: var(--width);
+    border-radius: 30% 55% 47% 53% / 40% 40% 17% 60%;
+    margin-left: 0px;
+}
+
+.backpack {
+    content: ' ';
+    position: absolute;
+    height: calc(var(--height) / 1.3);
+    width: calc(var(--width) / 6);
+    margin-top: calc(var(--height) / 2);
+    margin-left: calc(var(--width) / -6 - 0.4rem);
+    border-radius: 100% 0% 0% 100% / 20% 0% 0% 20%;
+    background-color: var(--character-color);
+}
+
+.backpack::before {
+    content: ' ';
+    position: absolute;
+    height: 85%;
+    width: 70%;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 50% 0% 22% 100% / 20% 0% 0% 20% ;
+    background-color: var(--shadow-color);
+}
+
+.visor {
+    position: absolute;
+    width: var(--visor-width);
+    aspect-ratio: 1.6 / 1;
+    border: solid 5px black;
+    border-radius: 30% 50% / 50%;
+    margin: calc(var(--height) / 5) calc(var(--width) / 3.5);
+    background-color: #40646f;
+    overflow: hidden;
+}
+
+.visor::before {
+    content: ' ';
+    position: absolute;
+    width: var(--visor-width);
+    top: -2rem;
+    left: 1rem;
+    aspect-ratio: 1.6 / 1;
+    background-color: #82c9e4;
+    border-radius: 50%;
+}
+
+.visor::after {
+    content: ' ';
+    position: absolute;
+    top: 0.5rem;
+    left: 4rem;
+    width: calc(var(--visor-width) / 2.4);
+    aspect-ratio: 2 / 1;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.legs {
+    bottom: 0px;
+    height: calc(var(--height) / 3.5);
+    background-color: var(--shadow-color);
+    border-radius: 0% 0% 50% 50%;
+    margin-bottom: calc(var(--height) / 2.5);
+}
+
+.legs::before {
+    content: ' ';
+    height: var(--leg-height);
+    width: calc(var(--width) / 3);
+    position: absolute;
+    margin-top: var(--leg-start);
+    border-radius: 0% 0% 30% 30%;
+    background-color: var(--shadow-color);
+}
+
+.legs::after {
+    content: ' ';
+    height: var(--leg-height);
+    width: calc(var(--width) / 3);
+    position: absolute;
+    margin: var(--leg-start) 0 0 calc(var(--width) - var(--width) / 3);
+    border-radius: 0% 0% 30% 30%;
+    background-color: var(--shadow-color);
+}
+
+.color-selector {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.selector {
+    height: 2.5rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 1rem;
+}
+
+.selector:hover {
+    border: solid 0.2rem white;
+    scale: 1.4;
+    cursor: pointer;
+}
+
+
+
+/* ===================================================== 2 ================================================ */
