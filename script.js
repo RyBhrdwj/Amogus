@@ -11,12 +11,11 @@ const colors = [
     {name: 'white', value: '#FFFFFF', shadow: '#A99E9E'}
 ];
 
-
 const parent = document.getElementsByClassName('color-selector')[0];
 
 colors.forEach(color => {
 
-    const selector = document.createElement('div');
+    const selector = document.createElement('button');
 
     selector.classList.add('selector');
 

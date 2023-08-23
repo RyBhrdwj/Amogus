@@ -173,17 +173,21 @@ body {
 .selector {
     height: 2.5rem;
     aspect-ratio: 1 / 1;
+    border: none;
     border-radius: 50%;
     overflow: hidden;
     margin: 1rem;
 }
 
-.selector:hover {
+.selector:hover, .selector:focus, .selector:active{
     border: solid 0.2rem white;
     scale: 1.4;
     cursor: pointer;
 }
 
+.selector:focus {
+    outline: none;
+}
 
 
 /* ===================================================== 2 ================================================ */
