@@ -1,8 +1,8 @@
 const colors = [
     {name: 'red', value: '#FF0000', shadow: '#A40127'},
     {name: 'yellow', value: '#FFFF00', shadow: '#26BB26'},
-    {name: 'green', value: '#00FF00', shadow: '#05AD0F'},
     {name: 'orange', value: '#FFA500', shadow: '#CC7A00'},
+    {name: 'green', value: '#107C2C', shadow: '#0A4B2D'},
     {name: 'blue', value: '#0000FF', shadow: '#1D1D98'},
     {name: 'violet', value: '#EE82EE', shadow: '#BB60BB'},
     {name: 'light blue', value: '#ADD8E6', shadow: '#88AACC'},
